@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: stretch;
+  list-style: none;
+}
+
+.chapter1-nav{
+  width: 33.33%;
+  background: #415134;
+  padding: 20px;
+}
+
+
+.chapter2-nav{
+  width: 33.33%;
+  background: #3E6068;
+  padding: 20px;
+}
+
+.chapter3-nav{
+  width: 33.33%;
+  background: #5D384F;
+  padding: 20px;
+}
