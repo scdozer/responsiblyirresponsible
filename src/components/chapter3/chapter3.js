@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Navigation from '../main/navigation/navigation';
+import ReactDOM from 'react-dom';
+import ReactFullpage from '@fullpage/react-fullpage';
+import Navigation from '../main/navigation/navigation'
 import './chapter3.css';
 
 export default class Chapter3 extends Component {
@@ -10,12 +12,25 @@ export default class Chapter3 extends Component {
 
   render() {
     return(
-      <div className="main-wrapper">
         <div className="content chapter3">
-          <h2>Chapter 3</h2>
+          <ReactFullpage
+              render={({ state, fullpageApi }) => {
+                return (
+                  <ReactFullpage.Wrapper>
+                    <div className="section">
+                      <p>Section 1 (welcome to fullpage.js)</p>
+                      <button onClick={() => fullpageApi.moveSectionDown()}>Click me to move down</button>
+                    </div>
+                    <div className="section">
+                      <p>Section 2</p>
+                    </div>
+                  </ReactFullpage.Wrapper>
+                );
+              }}
+            />
+          <Navigation />
         </div>
-        <Navigation />
-      </div>
+
     )
   }
 

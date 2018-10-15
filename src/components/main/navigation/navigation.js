@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Overdrive from 'react-overdrive';
 import { Parallax } from 'react-spring'
 
 import './navigation.css'
@@ -16,7 +17,9 @@ export default class Navigation extends Component {
       <div className="navigation">
         <ul>
            <li className="chapter1-nav">
-             <Link to = {`/chapter1`} className="no-decoration"> Chapter 1 </Link>
+             <Overdrive id="yes">
+             <Link to = {`/chapter2`} className="no-decoration"> Chapter 1 </Link>
+             </Overdrive>
            </li>
            <li className="chapter2-nav">
              <Link to = {`/chapter2`} className="no-decoration"> Chapter 2 </Link>

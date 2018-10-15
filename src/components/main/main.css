@@ -3,7 +3,7 @@ body{
     font-family: 'Kanit', sans-serif;
 }
 
-.main-wrapper{
+/* .main-wrapper{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -12,4 +12,4 @@ body{
 
 .content {
   flex: 1;
-}
+} */
